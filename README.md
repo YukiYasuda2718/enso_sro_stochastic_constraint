@@ -12,8 +12,8 @@ This repository contains all data and source code used in "A Stochastic-Thermody
 
 - Note: We ran all experiments on the `info_ao_dyn_pytorch_gpu` container.
   - But, GPUs were not used in these experiments.
+  - This container, `info_ao_dyn_pytorch_gpu`, is included just for reference.
   - The `info_ao_dyn_pytorch` container is for the CPU environment.
-  - The `info_ao_dyn_pytorch_gpu` container is included just for reference.
 
 ### Mac (only for apple silicon)
 
