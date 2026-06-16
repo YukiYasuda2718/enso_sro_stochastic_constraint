@@ -1,0 +1,39 @@
+{
+    "theme": "background-box",
+    "language": "en-us",
+    "checkComments": true,
+    "checkStrings": true,
+    "debounceTime": 200,
+    "ignore": [
+        "JupyterLab",
+        "Jupyter",
+        "JupyterHub",
+        "Voilà",
+        "Xeus",
+        "IPython",
+        "GFDLCM4C192",
+        "eps",
+        "webp",
+        "GFDL",
+        "CM4C192",
+        "Kuroshio",
+        "GCM",
+        "config",
+        "gulfstrm",
+        "kuroshio",
+        "langle",
+        "rangle",
+        "rightarrow",
+        "sqrt"
+    ],
+    "mimeTypes": [
+        "text/plain",
+        "text/x-ipythongfm",
+        "text/x-rst",
+        "text/x-latex",
+        "text/x-ipython",
+        "text/x-rsrc",
+        "text/x-markdown"
+    ],
+    "onlineDictionaries": []
+}
