@@ -12,7 +12,7 @@ This repository contains all data and source code used in "A Stochastic-Thermody
 
 1. Make data using [make_data.ipynb](./python/notebooks/make_data.ipynb)
    - The time length of simulations (`t_max`) is set to 10_000 yr.
-     - The data size for the 10_000-yr case is about 24 GB
+     - The data size for the 10_000-yr case is about 1.3 GB (per one parameter set, e.g., KA21)
    - To reproduce our results, set `t_max` to 50_000 yr.
      - See the comments in that notebook.
 2. Make figures using [make_figures.ipynb](./python/notebooks/make_figures.ipynb)
