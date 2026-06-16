@@ -36,5 +36,3 @@ COPY poetry.lock pyproject.toml ${HOME}/
 RUN pip install poetry \
     && poetry config virtualenvs.create false \
     && poetry install --no-root
-
-COPY .jupyter/ ${HOME}/.jupyter/

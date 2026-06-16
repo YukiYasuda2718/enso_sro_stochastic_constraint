@@ -16,6 +16,8 @@ vscode
 references
 log.txt
 tmp
+.cline/
+.copilot/
 
 # Jupyter
 .Trash*

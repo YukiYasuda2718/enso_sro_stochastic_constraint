@@ -16,7 +16,6 @@ services:
       - ./reports:/workspace/reports:cached
       - ./docs:/workspace/docs:cached
       - ./python:/workspace/python:cached
-    command: poetry run jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token=''
   pytorch_mac:
     user: "${UID}:${GID}"
     shm_size: "5gb"
@@ -33,7 +32,6 @@ services:
       - ./reports:/workspace/reports:cached
       - ./docs:/workspace/docs:cached
       - ./python:/workspace/python:cached
-    command: poetry run jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token=''
   pytorch_gpu:
     user: "${UID}:${GID}"
     shm_size: "5gb"
@@ -50,7 +48,6 @@ services:
       - ./reports:/workspace/reports:cached
       - ./docs:/workspace/docs:cached
       - ./python:/workspace/python:cached
-    command: poetry run jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token=''
     # deploy:
     #   resources:
     #     reservations:
