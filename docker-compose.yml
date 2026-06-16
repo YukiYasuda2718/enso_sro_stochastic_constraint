@@ -13,8 +13,6 @@ services:
       - PYTHONPATH=/workspace/python
     volumes:
       - ./data:/workspace/data:cached
-      - ./reports:/workspace/reports:cached
-      - ./docs:/workspace/docs:cached
       - ./python:/workspace/python:cached
   pytorch_mac:
     user: "${UID}:${GID}"
@@ -29,8 +27,6 @@ services:
       - PYTHONPATH=/workspace/python
     volumes:
       - ./data:/workspace/data:cached
-      - ./reports:/workspace/reports:cached
-      - ./docs:/workspace/docs:cached
       - ./python:/workspace/python:cached
   pytorch_gpu:
     user: "${UID}:${GID}"
@@ -45,8 +41,6 @@ services:
       - PYTHONPATH=/workspace/python
     volumes:
       - ./data:/workspace/data:cached
-      - ./reports:/workspace/reports:cached
-      - ./docs:/workspace/docs:cached
       - ./python:/workspace/python:cached
     # deploy:
     #   resources:
