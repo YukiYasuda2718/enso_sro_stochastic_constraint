@@ -1,0 +1,12 @@
+services:
+  info_ao_dyn_pytorch:
+    shm_size: "5gb"
+    platform: linux/amd64
+    build:
+      context: ../docker/pytorch
+    volumes:
+      - ..:/workspace:cached
+      - ~/.gitconfig:/workspace/.gitconfig:ro
+    environment:
+      - PYTHONPATH=/workspace/python
+    command: /bin/sh -c "while sleep 1000; do :; done"
