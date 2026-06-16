@@ -1,0 +1,60 @@
+version: "3"
+services:
+  pytorch:
+    user: "${UID}:${GID}"
+    shm_size: "5gb"
+    platform: linux/amd64
+    build:
+      context: ./docker/pytorch
+    tty: true
+    ports:
+      - "9999:8888"
+    environment:
+      - PYTHONPATH=/workspace/python
+    volumes:
+      - ./data:/workspace/data:cached
+      - ./reports:/workspace/reports:cached
+      - ./docs:/workspace/docs:cached
+      - ./python:/workspace/python:cached
+    command: poetry run jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token=''
+  pytorch_mac:
+    user: "${UID}:${GID}"
+    shm_size: "5gb"
+    platform: linux/arm64
+    build:
+      context: ./docker/pytorch_mac
+    tty: true
+    ports:
+      - "8888:8888"
+    environment:
+      - PYTHONPATH=/workspace/python
+    volumes:
+      - ./data:/workspace/data:cached
+      - ./reports:/workspace/reports:cached
+      - ./docs:/workspace/docs:cached
+      - ./python:/workspace/python:cached
+    command: poetry run jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token=''
+  pytorch_gpu:
+    user: "${UID}:${GID}"
+    shm_size: "5gb"
+    platform: linux/amd64
+    build:
+      context: ./docker/pytorch_gpu
+    tty: true
+    ports:
+      - "7777:8888"
+    environment:
+      - PYTHONPATH=/workspace/python
+    volumes:
+      - ./data:/workspace/data:cached
+      - ./reports:/workspace/reports:cached
+      - ./docs:/workspace/docs:cached
+      - ./python:/workspace/python:cached
+    command: poetry run jupyter lab --ip=0.0.0.0 --allow-root --no-browser --NotebookApp.token=''
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [ gpu ]
