@@ -7,25 +7,19 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "njpwerner.autodocstring",
         "ms-python.black-formatter",
         "ms-python.isort",
         "ms-toolsai.jupyter",
         "ms-toolsai.vscode-jupyter-cell-tags",
         "ms-toolsai.jupyter-renderers",
         "ms-python.vscode-pylance",
-        "christian-kohler.path-intellisense",
         "ms-python.python",
         "ms-python.debugpy",
-        "mosapride.zenkaku",
         "ms-python.flake8",
         "ms-python.mypy-type-checker",
-        "yzhang.markdown-all-in-one",
-        "github.copilot",
-        "github.copilot-chat",
-        "streetsidesoftware.code-spell-checker",
-        "saoudrizwan.claude-dev",
-        "amazonwebservices.aws-toolkit-vscode"
+        "njpwerner.autodocstring",
+        "christian-kohler.path-intellisense",
+        "streetsidesoftware.code-spell-checker"
       ],
       "settings": {
         "editor.formatOnSave": true,
