@@ -4,7 +4,7 @@ This repository contains all data and source code used in "A Stochastic-Thermody
 
 ## Build Environments
 
-### Linux (including WSL)
+### Linux (including WSL2)
 
 1. Install VSCode
 2. Install `Remote Development` extension
