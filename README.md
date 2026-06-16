@@ -6,6 +6,15 @@ This repository contains all data and source code used in "A Stochastic-Thermody
 
 ### Linux (including WSL)
 
+1. Install VSCode
+2. Install `Remote Development` extension
+3. Start a devcontainer (select `pytorch`) through `Dev Containers: Rebuild and Reopen in Container` on your command palette.
+
+- Note: We ran all experiments on the `pytorch_gpu` container.
+  - But, GPUs were not used in these experiments.
+  - The `pytorch` container is for the CPU environment.
+  - The `pytorch_gpu` container is included just for reference.
+
 ### Mac (only for apple silicon)
 
 ## Run Experiments
