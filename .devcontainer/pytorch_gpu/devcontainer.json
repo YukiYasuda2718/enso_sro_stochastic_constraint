@@ -1,6 +1,6 @@
 {
-  "name": "info_ao_dyn_linux_gpu",
-  "service": "info_ao_dyn_linux_gpu",
+  "name": "info_ao_dyn_pytorch_gpu",
+  "service": "info_ao_dyn_pytorch_gpu",
   "dockerComposeFile": "../docker-compose-pytorch_gpu.yml",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",

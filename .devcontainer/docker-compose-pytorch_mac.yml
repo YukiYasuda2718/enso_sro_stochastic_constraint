@@ -1,5 +1,5 @@
 services:
-  info_ao_dyn_mac:
+  info_ao_dyn_pytorch_mac:
     shm_size: "5gb"
     platform: linux/arm64
     build:

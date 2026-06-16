@@ -1,5 +1,5 @@
 services:
-  info_ao_dyn_linux:
+  info_ao_dyn_pytorch:
     shm_size: "5gb"
     platform: linux/amd64
     build:

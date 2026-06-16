@@ -1,6 +1,6 @@
 {
-  "name": "info_ao_dyn_mac",
-  "service": "info_ao_dyn_mac",
+  "name": "info_ao_dyn_pytorch_mac",
+  "service": "info_ao_dyn_pytorch_mac",
   "dockerComposeFile": "../docker-compose-pytorch_mac.yml",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
