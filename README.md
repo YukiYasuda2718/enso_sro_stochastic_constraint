@@ -17,6 +17,10 @@ This repository contains all data and source code used in "A Stochastic-Thermody
 
 ### Mac (only for apple silicon)
 
+1. Install VSCode
+2. Install `Remote Development` extension
+3. Start a devcontainer (select `info_ao_dyn_mac`) through `Dev Containers: Rebuild and Reopen in Container` on your command palette.
+
 ## Run Experiments
 
 1. Make data using [make_data.ipynb](./python/notebooks/make_data.ipynb)
