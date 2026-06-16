@@ -1,6 +1,6 @@
 # enso_sro_stochastic_constraint
 
-This repository contains all data and source code used in "A Stochastic-Thermodynamic Constraint on the Seasonal Phase Locking of the El Niño–Southern OscillationA Stochastic-Thermodynamic Constraint on the Seasonal Phase Locking of the El Niño–Southern Oscillation" by Yuki Yasuda and Tsubasa Kohyama.
+This repository contains all data and source code used in "A Stochastic-Thermodynamic Constraint on the Seasonal Phase Locking of the El Niño–Southern Oscillation" by Yuki Yasuda and Tsubasa Kohyama.
 
 ## Build Environments
 
