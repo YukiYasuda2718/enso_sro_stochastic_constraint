@@ -18,6 +18,8 @@ log.txt
 tmp
 .cline/
 .copilot/
+tmp/
+.claude/
 
 # Jupyter
 .Trash*
