@@ -150,7 +150,7 @@ def calc_diff_bound(
     )
     result = InformationThermodynamicsResult(langevin)
 
-    data = torch.sqrt(result.tur_pt[-nt_year:])
+    data = result.tur_pt[-nt_year:]
 
     vmax, vmin = data.max().item(), data.min().item()
     diff_bound = vmax - vmin
